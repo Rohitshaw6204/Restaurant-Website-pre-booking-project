@@ -1,0 +1,352 @@
+/* form start */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+form{
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 0px 2px #ccc;
+    padding: 10px;
+}
+form label{
+    display: block;
+}
+/* End */
+
+
+
+/*Sign-Up*/
+.sign{
+    text-align: right;
+    font-weight: bold;
+    margin-right: 100px;
+    
+}
+.nam{
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+/*End*/
+
+.krishna{
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    position: relative;
+}
+
+
+
+.menu{
+    height: 60px;
+    background-color: black;
+}
+
+
+/* left hadding desin */
+.res{
+height: auto;
+width: 10%;
+background-color: gray;
+}
+
+.res a{
+    font-size: 25px;
+    height: 50px;
+    width: 30%;
+    display: block;
+    margin-left: 110px;
+    padding-top: 10px;
+    
+}
+
+/* Right hadding desin */
+.login{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.login{
+    height: auto;
+    width: 30%;
+    background-color: gray;
+    float: right;
+    padding-left: 100px;
+    padding-top: 15px;
+    }
+
+.login a{
+    color: black;
+}    
+
+/* Middle hadding desin */
+.mbutton{
+height: auto;
+width: 60%;
+background-color: gray;
+float: left;
+float: left;
+}
+.mbutton ul{
+text-align: center;
+margin-top: 20px;
+}
+.mbutton ul li{
+display: inline-block;
+}
+.mbutton ul li a{
+margin-top: 15px;
+color: black;
+font-size: 25px;
+margin-left: 5px;
+line-height: 20px;
+padding: 5px;
+
+}
+.mbutton ul li a:hover{
+color: white;
+background-color: green;
+border-radius: 18px;
+}
+/*End*/
+
+
+/*
+input[type=text]{
+height: 30px;
+width: 250px;
+border-radius: 15px;
+margin: 10px;
+margin-top: 20px;
+}
+input[type=submit]{
+padding: 15px 20px;
+font-weight: bold;
+color: black;
+border-radius: 10px;
+margin-left: 70px;
+border-color: black;
+}
+*/
+
+.slider{
+    height: 600px;
+  }
+
+  html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*about start*/
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about .row .image{
+    flex: 1 1 30rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/*close*/
+
+/* reservation */
+
+.reservation form{
+    padding: 2rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.reservation form .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form .container .box{
+    flex: 1 1 40rem;
+}
+
+.reservation form .container .box p{
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.reservation form .container .box .input{
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
+    color: var(--black);
+}
+
+/* end */
+
+/* image start */
+.sen{
+    text-align: center;
+    color: black;
+    background-color: skyblue;
+    border-radius: 50px;
+    border-color: black;
+    border-style: outset;
+}
+img{
+  width: 250px;
+  height: 300px;
+  border: 0px solid black;
+  text-align: center;
+}
+.container{
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+/* end */
+
+.A{
+    color: black;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-image: url(C:\Users\kumar\OneDrive\Pictures\background.jpg);
+    border-width: 10px;
+
+    margin-left: 400px;
+}
+
+.sen{
+    text-align: center;
+    color: black;
+    background-color: skyblue;
+    border-radius: 50px;
+    border-color: black;
+    border-style: outset;
+}
+.col div {
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 20px;
+}
+.col3{
+border: 2px solid white; 
+}
+.title{
+font-size: 20px;
+font-weight: bold;
+}
+.back
+{   
+background-color: skyblue;
+color: black;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+padding: 5px;
+}
+footer
+{
+background-color: skyblue;
+color: black;
+padding: 10px;
+margin-top: 5px;
+display: grid;
+grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+
+/*Manu Table*/
+
+table {
+            width: 80%;
+            margin: 20px 0;
+            margin-left: 130px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize;
+
+        }
+        th {
+            background-color: #686464;
+        }
+        .veg {
+            color: green;
+        }
+        .non-veg {
+            color: red;
+        }
+        .price {
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }

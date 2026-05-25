@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="external.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Restaurants Management System</title>
+    <style>
+    
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    margin-left: 500px;
+    
+    
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.elem-group {
+    margin-bottom: 1rem;
+}
+
+.elem-group.inlined {
+    display: inline-block;
+    width: calc(50% - 0.5rem);
+    margin-right: 0.5rem;
+    vertical-align: top; /* Align top when next to another inlined block */
+}
+
+.elem-group.inlined:last-child {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width calculation */
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .elem-group.inlined {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.popup img{
+    width: 200px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+border: 2px solid black;
+margin-top: 100px;
+}
+    </style>
+  </head>
+  <body class="krishna">
+    <div class="bg-container">
+        <div class="row menu">
+            <div class="col-12 col-md-4 col-sm-12  res">
+               <a>Restaurant</a>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 mbutton">
+                    <ul>
+                      <li><a href="Home.html">Home</a></li>
+                      <li><a href="About.html">About</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
+                    </ul>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 login">
+                <a href="Login.html">Logout</a>
+            </div>
+        </div>   
+    </div>
+
+    <div class="form-container">
+        <form method="POST" name="google-sheet">
+            <h2>Book a Table</h2>
+            <div class="elem-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="Name" placeholder="John Doe" required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail:</label>
+                <input type="email" id="email" name="Email" placeholder="john.doe@example.com" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="Phone" placeholder="+1 123 456 7890" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="Date" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="Time" required>
+            </div>
+            <div class="elem-group">
+                <label for="table">Choose Table No. (1-10):</label>
+                <select id="table" name="Table" required>
+                    <option value="">Select a table</option>
+                    <script>
+                        // Dynamically generate options from 1 to 10
+                        for (let i = 1; i <= 10; i++) {
+                            document.write(`<option value="${i}">Table ${i}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+            <button type="submit" class="btn" onclick="openPopup()">Book Now</button>
+            <div class="popup" id="popup">
+                <img src="tick2.jpg">
+                <h2>Thank You</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()"><li><a href="Home.html">OK</a></li></button>
+            </div>
+        </form>
+        <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyfpawALq_3uDe9x3vNYc8hCNa8_Xxq_9DfdXOS9JoWd9dCE8Q6MqA4Muq6Yqhc4hvH/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                
+            })
+          </script>
+      
+  </div>
+    <footer>
+      <div class="col">
+       <div class="title"> ABOUT</div>
+       <div>Who We Are</div>
+       <div>Contact Us</div>
+      </div>
+       <div class="col">
+           <div class="title">Connect with Us</div>
+           <div>Facebook</div>
+           <div>twitter</div>
+           <div>Instagram</div>
+       </div>
+       
+       <div class="col">
+           <div class="title">LEARN MORE</div>
+           <div>Privacy</div>
+           <div>Security</div>
+           <div>Terms</div>
+       </div>
+   </footer>
+  </body>
+</html>

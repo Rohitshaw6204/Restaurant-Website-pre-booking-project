@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="external.css" rel="stylesheet">
+    <!--swiper js cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Restaurants Management System</title>
+    <style>
+        
+        .z{
+          border-radius: 10px;
+          width: 250px;
+          height: 300px;
+          margin-top: 50px;
+          margin-bottom: 25px;
+          margin-left: 80px;
+        }
+        
+    </style>
+  </head>
+  <body class="krishna">
+    <div class="bg-container">
+        
+        <div class="row menu">
+            <div class="col-12 col-md-4 col-sm-12  res">
+              <a>Restaurant</a>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 mbutton">
+                    <ul>
+                      <li><a href="Home.html">Home</a></li>
+                      <li><a href="About.html">About</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
+                    </ul>
+            </div>
+            <div class="col-12 col-md-4 col-sm-12 login">
+              <a href="Login.html">Logoutp</a>
+            </div>
+        </div>   
+
+        
+        <div class="row">
+          <div class="col-12 col-md-12 col-sm-12 slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images.avif"></div>
+                <div class="swiper-slide"><img src="images1.avif"></div>
+                <div class="swiper-slide"><img src="images4.jpg"></div>
+                <div class="swiper-slide"><img src="images5.jpg"></div>
+                <div class="swiper-slide"><img src="images6.jpg"></div>
+                <div class="swiper-slide"><img src="images7.jpg"></div>
+                <div class="swiper-slide"><img src="images8.jpg"></div>
+                <div class="swiper-slide"><img src="images9.jpg"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--swiper js link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    
+<br><br>
+    <h1>Crystal's Kitchen</h1>
+    <h2>Menu</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Type</th>
+                <th>Price (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Vegetarian Items (8 items) -->
+            <tr>
+                <td>Samosa</td>
+                <td class="veg">Veg</td>
+                <td class="price">30</td>
+            </tr>
+            <tr>
+                <td>Dosa</td>
+                <td class="veg">Veg</td>
+                <td class="price">100</td>
+            </tr>
+            <tr>
+                <td>Idli</td>
+                <td class="veg">Veg</td>
+                <td class="price">60</td>
+            </tr>
+            <tr>
+                <td>Paneer</td>
+                <td class="veg">Veg</td>
+                <td class="price">250</td>
+            </tr>
+            <tr>
+                <td>Dal</td>
+                <td class="veg">Veg</td>
+                <td class="price">150</td>
+            </tr>
+            <tr>
+                <td>Aloo</td>
+                <td class="veg">Veg</td>
+                <td class="price">120</td>
+            </tr>
+            <tr>
+                <td>Naan</td>
+                <td class="veg">Veg</td>
+                <td class="price">40</td>
+            </tr>
+            <tr>
+                <td>Rice</td>
+                <td class="veg">Veg</td>
+                <td class="price">90</td>
+            </tr>
+            
+            <!-- Non-Vegetarian Items (8 items) -->
+            <tr>
+                <td>Chicken</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">300</td>
+            </tr>
+            <tr>
+                <td>Mutton</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">450</td>
+            </tr>
+            <tr>
+                <td>Fish</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">350</td>
+            </tr>
+            <tr>
+                <td>Egg</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">80</td>
+            </tr>
+            <tr>
+                <td>Biryani</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">280</td>
+            </tr>
+            <tr>
+                <td>Kebab</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">220</td>
+            </tr>
+            <tr>
+                <td>Curry</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">270</td>
+            </tr>
+            <tr>
+                <td>Prawn</td>
+                <td class="non-veg">Non-veg</td>
+                <td class="price">400</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+    <footer>
+      <div class="col">
+        <div class="title"> ABOUT</div>
+        <div>Who We Are</div>
+        <div>Contact Us</div>
+       </div>
+        <div class="col">
+            <div class="title">Connect with Us</div>
+            <div>Facebook</div>
+            <div>twitter</div>
+            <div>Instagram</div>
+        </div>
+        
+        <div class="col">
+            <div class="title">LEARN MORE</div>
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Terms</div>
+        </div>
+   </footer>
+  </body>
+</html>
